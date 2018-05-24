@@ -22,7 +22,7 @@ describe('your-app', () => {
   let github
 
   beforeEach(() => {
-    // Here we create an Application instance
+    // Here we create an `Application` instance
     app = new Application()
     // Here we initialize the app
     plugin(app)
