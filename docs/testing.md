@@ -9,7 +9,7 @@ We highly recommend working in the style of [test-driven development](http://agi
 For our testing examples, we use [jest](https://facebook.github.io/jest/), but there are other options that can perform similar operations. Here's an example of creating an app instance and mocking out the GitHub API:
 
 ```js
-// Requiring probot allows us to get an Application instance
+// Requiring Probot allows us to get an `Application` instance
 const {Application} = require('probot')
 // Requiring our app
 const plugin = require('')
