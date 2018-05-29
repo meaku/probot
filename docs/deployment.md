@@ -139,7 +139,7 @@ The Probot website includes a list of [featured apps](https://probot.github.io/a
 
 ## Combining apps
 
-To deploy a bot that includes multiple apps, create a new app that has the apps listed as dependencies in `package.json`:
+To deploy a bot that includes multiple apps, create a new app that has the apps listed by their npm-name as dependencies in `package.json`. :
 
 ```json
 {
@@ -160,6 +160,8 @@ To deploy a bot that includes multiple apps, create a new app that has the apps 
  }
 }
 ```
+
+If you get an error that the module could not be loaded, make sure that the `app` you're integrating exposes an `index.js` file or a `main` entry in the package.json. 
 
 ## Error tracking
 
